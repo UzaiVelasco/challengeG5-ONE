@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="main-izquierda">
+            <img class="logo" src="imagenes/Vector.png" alt="logo">
+
+            <section class="campos-area">
+                <form id="formulario" method="get">
+                    <textarea id="texto-ingresado" class="texto-ingresado" rows="10%" cols="40%" placeholder="Ingrese el texto aquí"></textarea>
+                    <p class="instruccion"> &#9888;Solo letras minúsculas y sin acentos</p>                    
+                    <div class="campos-botones">
+                        <input class="encripta" type="submit" value="Encriptar!">
+                    <input class="desencripta" type="submit" value="Desencriptar!">                    
+                    </div>                    
+                </form>
+                <p class="autor">&copy; Uzai velasco Hernandez</p>
+            </section>
+        </div>
+
+        <div class="main-derecha">
+            
+            <div class="contenido-resultado">
+                <img class="img-resultado" src="imagenes/Muñeco.png" alt="lupa">
+                <p class="leyenda">Ningún mensaje fue encontrado</p>
+                <div class="campo-area-resultado">
+                    <textarea id="texto-resultado" class="texto-resultado" rows="9%" cols="30%"
+                    placeholder="ingresa el texto que desees encriptar o desencriptar"></textarea>      
+                    <input class="copiar" type="submit" value="Copiar" onclick="copiarTexto()">     
+                    <p class="autor">&copy; Uzai velasco Hernandez</p>            
+                </div>            
+            </div>            
+        </div>          
+    </main>    
+    <script src="encriptador.js"></script>
+</body>
+</html>
